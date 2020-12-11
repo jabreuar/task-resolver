@@ -1,0 +1,40 @@
+{
+  "name": "task-resolver",
+  "version": "1.0.0",
+  "description": "ADP Innovation Labs Pre-Interview Assignment",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "jest --verbose",
+    "lint": "eslint",
+    "build": "babel src -d dist",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabreuar/task-resolver.git"
+  },
+  "author": "Jonas de Abreu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jabreuar/task-resolver/issues"
+  },
+  "homepage": "https://github.com/jabreuar/task-resolver#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "rimraf": "^3.0.2",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0"
+  }
+}
