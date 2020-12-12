@@ -1,4 +1,4 @@
-# task-resolver
+# Task Resolver
 ADP Innovation Labs Pre-Interview Assignment
 
 ## Getting Started
