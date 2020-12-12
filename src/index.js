@@ -1,9 +1,14 @@
-const CalculatorFactory = require('./calculator/calculator').default;
+const server = require('../src/server/server');
+const events = require('../src/events/events');
+// eslint-disable-next-line import/order
+const io = require('socket.io')(server);
 
-const left = 10;
-const right = 10;
+io.on('connection', (socket) => {
+  events.register(socket);
+  socket.on('disconnect', () => {});
+});
 
-let addition = new CalculatorFactory("addition", left, right);
-
-console.log(addition.apply())
+server.listen(80);
+// eslint-disable-next-line no-console
+console.log('Server started running at http://127.0.0.1:80/');
 

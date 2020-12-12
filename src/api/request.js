@@ -4,10 +4,9 @@ const { GET_TASK_URI, POST_TASK_URI } = require('./api.config');
 async function get() {
     try {
         let data = (await axios.get(GET_TASK_URI)).data;
-        console.log(data);
         return data;
     } catch (error) {
-        console.error(`An ${error.response} error has ocurred while trying to fetch a task`);
+        console.error(`An error has ocurred while trying to fetch a task: ${error.response} `);
         return { id: '0', operation: 'An error happened. Please try Again' };
     }
 }
