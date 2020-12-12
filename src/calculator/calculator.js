@@ -1,8 +1,18 @@
-const addition = (left, right) => Number(left) + Number(right);
-const subtraction = (left, right) => Number(left) - Number(right);
-const multiplication = (left, right) => Number(left) * Number(right);
-const division = (left, right) => Number(left) / Number(right);
-const remainder = (left, right) => Number(left) % Number(right);
+function addition(left, right) {
+    return Number(left) + Number(right);
+}
+function subtraction(left, right) {
+    return Number(left) - Number(right);
+}
+function multiplication(left, right) {
+    return Number(left) * Number(right);
+}
+function division(left, right) {
+    return Number(left) / Number(right);
+}
+function remainder(left, right) {
+    return Number(left) % Number(right);
+}
 module.exports = {
     addition,
     subtraction,

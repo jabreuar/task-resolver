@@ -3,9 +3,9 @@ const calculator = require('../calculator/calculator');
 
 const onGet = (socket) => {
   socket.on('get', () => {
-    request.get().then((problem) => {
-      console.log(`Task: ${JSON.stringify(problem)}`);
-      socket.emit('getCallback', problem);
+    request.get().then((task) => {
+      console.log(`Task: ${JSON.stringify(task)}`);
+      socket.emit('getCallback', task);
     });
   });
 };

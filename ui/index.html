@@ -5,16 +5,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Task Resolver</title>
+    <style>
+        .container {
+            min-height: 200px;
+            position: relative;
+            border: 1px solid gray;
+            max-width: 50%;
+            overflow-y: auto;
+        }
+        .btn {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .divLeft {
+            float: left;
+            width: 25%;
+            min-height: 280px;
+        }
+
+        .divMiddle {
+            float: left;
+            width: 50%;
+            min-height: 280px;
+        }
+
+        .divRight {
+            float: right;
+            width: 25%;
+            min-height: 280px;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <input id="btnStart" type="button" onclick="get()" value="Start Task Resolver">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"
-            integrity="sha512-vGcPDqyonHb0c11UofnOKdSAt5zYRpKI4ow+v6hat4i96b7nHSn8PQyk0sT5L9RECyksp+SztCPP6bqeeGaRKg=="
-            crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-
+    <input id="btnStart" type="button" class="btn" onclick="get()" value="Start Task Resolver">
+    <div class="container">
+        <div class="divLeft"><label id="lblGetTask"></label></div>
+        <div class="divMiddle"><label id="lblResultTask"></label></div>
+        <div class="divRight"> <label id="lblSubmitTask"></label></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"
+        integrity="sha384-eR+bbT85XPh+//KUxVKFPo0h5uhDtuh0jm6tk7oaZxmM8KbdLJGayIFp09NGsJA5"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
