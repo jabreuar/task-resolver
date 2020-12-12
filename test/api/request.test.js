@@ -2,7 +2,6 @@ const axios = require('axios');
 jest.mock('axios');
 
 const request = require('../../src/api/request');
-const { GET_TASK_URI, POST_TASK_URI } = require('../../src/api/api.config');
 
 test('Should get a task', async () => {
   const mockResult = {
