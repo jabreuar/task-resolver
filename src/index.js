@@ -1,6 +1,6 @@
+// eslint-disable-next-line import/order
 const server = require('../src/server/server');
 const events = require('../src/events/events');
-// eslint-disable-next-line import/order
 const io = require('socket.io')(server);
 
 io.on('connection', (socket) => {

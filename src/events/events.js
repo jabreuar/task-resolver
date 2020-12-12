@@ -31,8 +31,6 @@ const onSubmit = (socket) => {
   });
 };
 
- 
-
 const register = (socket) => {
   onGet(socket);
   onCalculator(socket);
